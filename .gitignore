@@ -18,7 +18,7 @@
 .env.test.local
 .env.production.local
 
-./data/weatherapi
+
 
 
 npm-debug.log*
