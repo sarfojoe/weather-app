@@ -27,3 +27,45 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.search-form input {
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #000000;
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.search-form button {
+    width: 8%;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px !important;
+    background: linear-gradient(45deg, #8e0e00 30%, #1f1c18 90%);
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .search-form input {
+        width: 80%;
+    }
+    .search-form button {
+        width: 18%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .search-form input {
+        width: 80%;
+    }
+    .search-form button {
+        width: 18%;
+    }
+}
