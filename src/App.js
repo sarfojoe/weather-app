@@ -7,6 +7,18 @@ function App() {
   const [city, setCity] = useState("Lahore");
   const [loading, setLoading] = useState(false);
 
+  const getData = async () => {
+    try {
+      setLoading(true);
+      const data = await getWeatherData(city);
+      setWeatherData(data);
+      setLoading(false);
+    } catch (error) {
+      console.log(error.message);
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="App">
       <div className="card">
